@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Services Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .card {
+            background-color: #4a4a4a;
+            color: #fff;
+            width: 700px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .services, .benefits {
+            width: 45%;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #777;
+            padding-bottom: 5px;
+        }
+
+        .services ul, .benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .services ul li, .benefits ul li {
+            margin: 5px 0;
+        }
+
+        .benefits ul li {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .benefits .line {
+            border-bottom: 1px solid #777;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Decorative Elements */
+        .decoration-top, .decoration-bottom {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+        }
+
+        .decoration-top {
+            top: -10px;
+            right: 20px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        }
+
+        .decoration-bottom {
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        }
+    </style>
+</head>
+<body style="background-image: url('html and css assets/l1.gif');">
+
+<div class="card">
+    <div class="services">
+        <h2 class="section-title">Services</h2>
+        <ul>
+            <li>Software Development</li>
+            <li>Web Application Development</li>
+            <li>Mobile Application Development</li>
+            <li>API Integration</li>
+            <li>Database Management</li>
+            <br>
+            <li><strong>Consulting</strong></li>
+            <li>Technical Strategy</li>
+            <li>Code Review</li>
+            <li>Performance Optimization</li>
+        </ul>
+    </div>
+    <div class="benefits">
+        <h2 class="section-title">Benefits to Company</h2>
+        <ul>
+            <li>Increased Efficiency <span class="line"></span></li>
+            <li>Improved Scalability <span class="line"></span></li>
+            <li>Enhanced Security <span class="line"></span></li>
+            <li>Reduced Costs <span class="line"></span></li>
+            <li>Future-Proofing Technology <span class="line"></span></li>
+        </ul>
+    </div>
+    <div class="decoration-top"></div>
+    <div class="decoration-bottom"></div>
+</div>
+
+</body>
+</html>
